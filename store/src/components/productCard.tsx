@@ -46,7 +46,7 @@ export default function ProdutoCard({ produto }: Props) {
 
       <View style={styles.info}>
         <Text style={styles.titulo}>{produto.brand}</Text>
-        <Text style={styles.size}>US {produto.size}</Text>
+        <Text style={styles.size}>Tamanho {produto.size}</Text>
         <Text style={styles.preco}>R$ {produto.price}</Text>
       </View>
     </TouchableOpacity>
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     marginLeft: 3,
     marginRight: 3,
     elevation: 3,
-    shadowColor: "#000",
+    shadowColor: "#a5a5a5",
     shadowOpacity: 0.2,
     shadowRadius: 8,
   },

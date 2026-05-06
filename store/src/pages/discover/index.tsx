@@ -73,12 +73,12 @@ export default function Discover() {
             style={styles.card}
             onPress={() =>
               // Navega para a tela de produto enviando o ID e os dados
-              navigation.navigate('produto', { 
+              navigation.navigate('Produto', { 
                 id: item.id,
-                nome: item.nome,
-                preco: item.preco,
-                tamanho: item.tamanho,
-                img: item.img
+                brand: item.nome,
+                price: item.preco,
+                size: item.tamanho,
+                image: item.img
               })
             }
           >
@@ -114,6 +114,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0f0f0',
     padding: 12,
     borderRadius: 12,
+    marginTop: 38,
     marginBottom: 15,
     fontSize: 16,
   },

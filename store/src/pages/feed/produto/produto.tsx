@@ -72,7 +72,7 @@ export default function Produto() {
 
         <Text style={styles.price}>R$ {produto.price || produto.preco}</Text>
 
-        <Text style={styles.likes}>❤️ {likes} curtidas</Text>
+        {/*<Text style={styles.likes}>❤️ {likes} curtidas</Text>*/}
 
         <Text style={styles.description}>
           {produto.description || "Produto em ótimo estado, pouco usado. Ideal para compor looks modernos."}
@@ -92,9 +92,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
   },
   imageWrapper: {
-    backgroundColor: '#fff', // Fundo branco para destacar o produto no resizeMode contain
+    backgroundColor: '#fff', 
     width: '100%',
-    height: 400,
+    height: 390,
     justifyContent: 'center',
     alignItems: 'center',
   },

@@ -7,4 +7,5 @@ export type prodTypes = {
   price: string
   image: ImageSourcePropType
   likes: number
+  description: string
 }
