@@ -3,7 +3,7 @@ import User from "../pages/user";
 import Sales from "../pages/sales";
 import Inbox from "../pages/inbox";
 import Feed from "../pages/feed";
-import Discover from "../pages/discover";
+import Discover from "../pages/discover"
 import CustomTabBar from "../components/customTabBar";
 
 const Tab = createBottomTabNavigator()
@@ -18,8 +18,8 @@ export default function BottomRoutes(){
             tabBar={props=><CustomTabBar{...props}/>}
         >
             <Tab.Screen 
-                name="User"
-                component={User}
+                name="Feed"
+                component={Feed}
             />
 
             <Tab.Screen 
@@ -33,8 +33,8 @@ export default function BottomRoutes(){
             />
 
             <Tab.Screen 
-                name="Feed"
-                component={Feed}
+                name="User"
+                component={User}
             />
 
             <Tab.Screen 
