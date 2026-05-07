@@ -1,20 +1,21 @@
-import './gesture-handler'
+import './gesture-handler';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-
+import { CartProvider } from './src/context/CartContext';
+import { LikesProvider } from './src/context/LikesContext';
+import { ProductProvider } from './src/context/ProductContext';
 import Routes from './src/routes/index.routes';
-import Login from './src/pages/login';
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Routes/>
-    </NavigationContainer>
+    <ProductProvider>
+      <LikesProvider>
+        <CartProvider>
+          <NavigationContainer>
+            <Routes />
+          </NavigationContainer>
+        </CartProvider>
+      </LikesProvider>
+    </ProductProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  
-});

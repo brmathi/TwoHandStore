@@ -36,6 +36,48 @@ export default function Discover() {
       tamanho: '42',
       img: require('../../../assets/img/img4.webp') 
     },
+    { 
+      id: '5', 
+      nome: 'Other',
+      preco: 112, 
+      tamanho: '42',
+      img: require('../../../assets/img/img8.jpg') 
+    },
+    { 
+      id: '6', 
+      nome: 'Other',
+      preco: 98, 
+      tamanho: 'M',
+      img: require('../../../assets/img/img9.jpg') 
+    },
+    { 
+      id: '7', 
+      nome: 'Other',
+      preco: 17.50, 
+      tamanho: 'P',
+      img: require('../../../assets/img/img10.jpg') 
+    },
+    { 
+      id: '8', 
+      nome: 'Carhartt',
+      preco: 230, 
+      tamanho: '44',
+      img: require('../../../assets/img/img11.jpg') 
+    },
+     { 
+      id: '9', 
+      nome: 'Rocawear',
+      preco: 200, 
+      tamanho: '44',
+      img: require('../../../assets/img/img12.jpg') 
+    },
+    { 
+      id: '10', 
+      nome: 'Harley Davidson',
+      preco: 189, 
+      tamanho: 'G',
+      img: require('../../../assets/img/img13.jpg') 
+    },
   ];
 
   const filtrados = produtos.filter((item) =>
